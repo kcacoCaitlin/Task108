@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统一建模语言理论测试</title>
+         <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+         <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <script src="./jquery-3.2.1.js"></script>        
+        <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+        <script src="jisuanfenshu.js"></script>
+ 
+    </head>
+    <body>
+ 
+       <div class="container">
+        <h1 class="text-center"><strong>统一建模语言理论测试</strong></h1>
+<table cellpadding="8">
+    <div class="row">
+  <div class="col-xs-4 col-md-3">考试科目：统一建模语言</div>
+           <div class="col-xs-4 col-md-3"><a href="#" data-toggle="tooltip" data-placement="bottom" title="请注意时间">时间：100分钟</a></div>
+            <div class="col-xs-4 col-md-3"><p id="scores">得分：</p></div>
+	</div>
+  <div class="row">
+  <div class="col-xs-4 col-md-3"> 班级：<label><input class="form-control" type="text" ></label></div>
+        
+            <div class="col-xs-4 col-md-3">学号：<label><input class="form-control" type="text"/></label></div>
+        
+            <div class="col-xs-4 col-md-3">姓名：<label><input class="form-control" type="text"  /></label></div>
+	</div>
+     </table>
+<h2>
+    一、填空题（每空5分，共20分）
+</h2>
+
+   <ol>
+    <li>UML的中文全称是：<label><input class="form-control" name="fillBlank"/></label></li>
+ 	<li>对象最突出的特征是：<label><input class="form-control" name="fillBlank" /></label>&nbsp;&nbsp;
+        <label><input class="form-control" name="fillBlank"/></label>&nbsp;&nbsp;
+        <label><input class="form-control" name="fillBlank"/></label></li>
+</ol>
+<h2>
+    二、选择题（每题10分，共20分）
+</h2> 
+<ol>
+<form action="#" >
+  <li>UML与软件工程的关系是：<br />
+  
+    <div class="radio">
+    <label><input name="SingleChoice1" type="radio"/>(A)UML就是软件工程</label></div>
+    <div class="radio">
+    <label><input name="SingleChoice1" type="radio" />(B)UML参与到软件工程中软件开发过程的几个阶段</label></div>
+    <div class="radio"><label><input name="SingleChoice1" type="radio"/>(C)UML与软件工程无关</label></div>
+    <div class="radio"><label><input name="SingleChoice1" type="radio"/>(D)UML是软件工程的一部分</label></div></li>
+</form>
+<br />
+<form action="#">
+    <li>Java语言支持：<br />
+    <div class="radio">
+    <label><input name="SingleChoice2" type="radio" />(A)单继承</label></div>
+    <div class="radio">
+    <label><input name="SingleChoice2" type="radio"/>(B)多继承</label></div>
+    <div class="radio">
+    <label><input name="SingleChoice2" type="radio" />(C)单继承和多继承都支持</label></div>
+    <div class="radio">
+    <label><input name="SingleChoice2" type="radio" />(D)单继承和多继承都不支持</label></div></li>
+   
+</form>
+ </ol>
+<h2>
+    三、多选项（每题10分，共20分）
+</h2>
+<ol>
+<form action="#" >
+    <li>用例的粒度分为以下哪三种：<br />
+    <div class="checkbox">
+    <label><input type="checkbox" name="MultioleChoise1"/>(A)概述级</label></div>
+    <div class="checkbox">
+		<label><input type="checkbox" name="MultioleChoise1" />(B)需求级</label></div>
+   <div class="checkbox">
+	   <label><input type="checkbox" name="MultioleChoise1"/>(C)用户目标级</label></div>
+	   <div class="checkbox">
+		   <label><input type="checkbox" name="MultioleChoise1"/>(D)子功能级</label></div>
+</li>
+</form>
+<br />
+<form action="#" >
+    <li>类图由以下哪三部分组成：<br />
+  <div class="checkbox">
+	  <label><input type="checkbox" name="MultioleChoise2" />(A)名称（Name）</label></div>
+	  <div class="checkbox">
+    <label><input type="checkbox" name="MultioleChoise2"/>(B)属性（Attribute）</label></div>
+    <div class="checkbox">
+    <label><input type="checkbox"  name="MultioleChoise2"/>(C)操作（Operation）</label></div>
+    <div class="checkbox">
+    <label><input type="checkbox" name="MultioleChoise2"/>(D)方法（Function）</label></div>
+    </li>
+</form>
+</ol>
+<h2>
+    四、判断题（每题10分，共20分）
+</h2>
+<form>
+  <div>
+   1.用例图只是用于和客户交流和沟通的，用于确定需求。 <label><input name="Judge1" type="radio" />&radic;</label> <label><input name="Judge1" type="radio"  />&Chi;</label>
+   </div>
+   <div>
+   2.在状态图中，终止状态在一个状态图中允许有任意多个。 <label><input name="Judge2" type="radio" />&radic;</label> <label><input name="Judge2" type="radio" />&Chi;</label></div>
+</form>
+<h2>
+    五、简答题（每题20分，共20分）
+</h2>
+<form action="#" class="left2em">
+    <label>1.简述什么是模型以及模型的表现形式？</label>
+    <br />
+		   </form>
+    <form role="form"> 
+<div class="form-group"> 
+
+<textarea cols="50" rows="3" id="ShortAnswer"></textarea>
+</div> 
+		</form>
+<br />
+        <!-- Button trigger modal -->
+           <div>
+               <div class="row">
+                   <button type="submit" id="submit" onclick="Results()">计算分数</button>
+               </div>
+       </div>
+
+	   </div>
+	   </body> 
+</html>
